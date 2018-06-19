@@ -1,0 +1,40 @@
+
+<DOCTYPE html lang="en-US">
+<html>
+<head>
+
+	<title>my-app</title>
+	<meta charset="utf-8">
+	<meta name="Description" content="You will get 'Recommendations' for a party">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body style="font-family:sans-serif;">
+	<main>
+		<div class="Main_Page">
+	   	<div class="newtokazzam">New to Kazzam ?<br/> <span> Create an account with email</span></div>
+	    <form action="#">
+	    	
+	    	
+	    	<div><input type="text" id="Firstname" placeholder="First Name" required></div>
+	    	<div><input type="text" id="LastName" placeholder="Last Name" required>
+	    	</div> 	
+		<div><input type="email" id="email" placeholder="Email"required></div>
+		<div><input type="password" id="password" placeholder="Password" required></div>
+		<div><input type="password" id="confirmPassword" placeholder="Confirm Password" required></div>
+		<div class="error"></div>	
+		<div><input type="checkbox" id="agree" required>I agree to Kazzam's privacy policy+term & conditions</div>   
+		<div class="accountCreate">
+		   <input type="submit" id="crt" value="Create Account" onclick="registerFunction()">
+		   </div>
+       </form>
+	<div class="switch"><p id="create"> Already have an account?  <strong><a href="login.html" id="createaccount"> Log In </a></strong></p>
+	  </div>
+	  </div>
+ 	</main>
+<script src="registration.js" >
+</script> 
+</body>
+
+</html>
+

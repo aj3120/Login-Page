@@ -1,0 +1,58 @@
+body{
+	background-image: url('bg.png');
+
+}
+main{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height:100%;
+
+}
+.Main_Page{
+	border:1px solid black;
+	border-radius: 10px;
+	text-align: center;
+	width:35%;
+}
+.signin{
+	padding-top:30px;
+	height:30px;
+	background-color: white;
+	text-align: center;
+	border:1px solid white;
+	border-radius:10px 10px 0px 0px;
+}
+#log,#crt{
+	background-color: gray;
+	border:1px solid gray;
+	border-radius: 5px;
+}
+.switch{
+	background-color: lightgray;
+	display: flex;
+	align-items: stretch;
+	border:1px solid lightgray;
+	border-radius:0px 0px 10px 10px;
+	text-align: center;
+}
+#create{
+	margin:20px auto;
+}
+form{
+	display: flex;
+	flex-direction: column;
+}
+#createaccount{
+ text-decoration: none;
+ color:black;
+}
+.newtokazzam{
+	padding-top:30px;
+	height:40px;
+	background-color: white;
+	text-align: center;
+	border:1px solid white;
+	border-radius:10px 10px 0px 0px;
+}
