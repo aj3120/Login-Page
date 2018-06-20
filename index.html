@@ -11,20 +11,25 @@
 <body style="font-family:sans-serif;">
 	<main>
 		<div class="Main_Page">
-	   	<div class="signin">Sign In</div>
+	   	<div class="signin"><strong>Sign In</strong></div>
 	    <form action="#">
 	    	
-	    	
-	    	<div><input type="email" id="email" placeholder="Email" required></div>
-	    	<div><input type="password" id="password" placeholder="Password" required>
+	    	<div class="box">
+	    	<div><input type="email" id="email"  required>
+	    	<label>Email</label>
+	    	</div>
+
+	    	<div><input type="password" id="password"  required>
+	    	<label>Password</label>	
 	    	</div> 
+	    	</div>
 	       <div class="error"></div>			
 		   <div class="login">
 		   <input type="submit" onclick="loginFunction()" id="log" value="Login">
 		   </div>
-		   <div><a href="forgot.html">Forgot Password</a></div>
+		   <div id="forgot"><a href="forgot.html">Forgot Password</a></div>
        </form>
-              <div class="switch"><p id="create"> Don't have an account ? <strong><a href="registration.html" id="createaccount"> Create Account </a></strong></p>
+              <div class="switch"><p id="create">Don't have an account ? <strong><a href="registration.html" id="createaccount"> Create Account </a></strong></p>
 	  </div>
 	  </div>
 

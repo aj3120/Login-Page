@@ -12,18 +12,28 @@
 <body style="font-family:sans-serif;">
 	<main>
 		<div class="Main_Page">
-	   	<div class="newtokazzam">New to Kazzam ?<br/> <span> Create an account with email</span></div>
+	   	<div class="newtokazzam"><strong>New to Kazzam ? </strong><br/> <span> Create an account with email</span></div>
 	    <form action="#">
 	    	
-	    	
-	    	<div><input type="text" id="Firstname" placeholder="First Name" required></div>
-	    	<div><input type="text" id="LastName" placeholder="Last Name" required>
+	    	<div class="box">
+	    	<div><input type="text" id="Firstname"  required>
+			<label>Firstname</label>
+	    	</div>
+	    	<div><input type="text" id="LastName" required>
+	    	<label>Lastname</label>	
 	    	</div> 	
-		<div><input type="email" id="email" placeholder="Email"required></div>
-		<div><input type="password" id="password" placeholder="Password" required></div>
-		<div><input type="password" id="confirmPassword" placeholder="Confirm Password" required></div>
+		<div><input type="email" id="email" required>
+		<label>Email</label>	
+		</div>
+		<div><input type="password" id="password"  required>
+		<label>Password</label>	
+		</div>
+		<div><input type="password" id="confirmPassword"  required>
+		<label>Password</label>		
+		</div>
+	   </div>
 		<div class="error"></div>	
-		<div><input type="checkbox" id="agree" required>I agree to Kazzam's privacy policy+term & conditions</div>   
+		<div class="agreeClass"><input type="checkbox" id="agree" required>I agree to Kazzam's privacy policy+term & conditions</div>   
 		<div class="accountCreate">
 		   <input type="submit" id="crt" value="Create Account" onclick="registerFunction()">
 		   </div>
