@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+/* padding and border are included in the total width and height of the elements.*/
 body{
 	background-image: url('bg.png');
 
@@ -14,13 +18,12 @@ main{
 	border:1px solid gray;
 	border-radius: 10px;
 	text-align: center;
-	width:600px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .signin,.newtokazzam{
 	padding-top:30px;
 	padding-bottom:5px;
-	height:30px;
+	height:70px;
 	background-color: white;
 	text-align: center;
 	border:1px solid white;
@@ -50,6 +53,7 @@ form{
 	display: flex;
 	flex-direction: column;
 	align-items: space-around;
+	margin-bottom:0px;
 
 }
 #createaccount{
@@ -58,7 +62,6 @@ form{
 }
 .newtokazzam{
 	padding-top:30px;
-	height:40px;
 	background-color: white;
 	text-align: center;
 	border:1px solid white;
@@ -70,11 +73,11 @@ form{
 form>div{
 	margin:3px;
 }
-.error{
-	display:none;
+#error{
+	font-size:10px;
+	color:red;
 }
 #log,#crt{
-	width: 250px;
 	height:30px;
 	color:white;
 	font-size:15px;
@@ -84,6 +87,7 @@ form>div{
 	width:70%;
 	height:40px;
 	border-radius: 5px;
+	font-size:10px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -93,7 +97,7 @@ form>div{
   color: #404b59;
 }
 #agree{
-	width:3%;
+	width:50PX;
 	
 
 }
@@ -106,19 +110,76 @@ form>div{
 }
 .box div {
 	position: relative;
-	margin:10px;
+	margin:15px;
 }
 .box div label{
 	position:absolute;
 	top:10px;
-	left:93px;
+	left:16%;
 	color:gray;
 	font-size:15px;
-	transition: 0.5s;
+	transition: 0.2s;
 	pointer-events: none;
 }
 .box input:focus ~ label,.box input:valid ~ label{
 	top:4px;
 	color:#0A9788;
 	font-size: 9px;
+}
+@media only screen and (max-width:300px){
+	
+	#log,#crt{
+		max-width:60px;
+	}
+	.Main_Page{
+		width:90%;
+	}
+}	
+@media only screen and (max-width:450px){
+	#log,#crt{
+		width:60px;
+	}
+	.Main_Page{
+		width:90%;
+	}
+
+}
+@media only screen and (max-width:600px){
+	#log,#crt{
+		width:70px;
+	}
+	.Main_Page{
+		width:90%;
+	}
+
+}
+@media only screen and (max-width:768px){
+	#log,#crt{
+		width:120px;
+	}
+	.Main_Page{
+
+		width:80%;
+	}
+
+}
+@media only screen and (min-width:768px){
+	#log,#crt{
+		width:200px;
+	}
+	.Main_Page{
+
+		width:85%;
+	}
+
+}
+@media only screen and (min-width:1024px){
+	#log,#crt{
+		width:200px;
+	}
+	.Main_Page{
+
+		width:600px;
+	}
+
 }
