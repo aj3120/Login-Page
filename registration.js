@@ -23,6 +23,7 @@ function registerFunction(){
 		};
 		xhttp.onreadystatechange=function(){
 			if(this.readyState==4 && this.status==201){
+				document.getElementById('error').innerHTML="";
 				tokenResponse=this.responseText;
 				console.log(tokenResponse);
 				tokenResponse=JSON.parse(tokenResponse);

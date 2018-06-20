@@ -9,6 +9,7 @@ function loginFunction(){
 	};
 	xhttp.onreadystatechange=function(){
 		if(this.readyState==4 && this.status==200){
+			document.getElementById('error').innerHTML="";
 			tokenResponse=this.responseText;
 			console.log(tokenResponse);
 			tokenResponse=JSON.parse(tokenResponse);
