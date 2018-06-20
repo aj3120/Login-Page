@@ -14,7 +14,7 @@ main{
 	border:1px solid gray;
 	border-radius: 10px;
 	text-align: center;
-	width:27%;
+	width:600px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .signin,.newtokazzam{
@@ -74,15 +74,15 @@ form>div{
 	display:none;
 }
 #log,#crt{
-	width: 50%;
-	height:4%;
+	width: 250px;
+	height:30px;
 	color:white;
 	font-size:15px;
 }
 #firstname,#lastname,#email,#password,#confirmpassword{
 	padding-left:5px;
 	width:70%;
-	height:4%;
+	height:40px;
 	border-radius: 5px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -111,7 +111,7 @@ form>div{
 .box div label{
 	position:absolute;
 	top:10px;
-	left:18%;
+	left:93px;
 	color:gray;
 	font-size:15px;
 	transition: 0.5s;
@@ -119,5 +119,6 @@ form>div{
 }
 .box input:focus ~ label,.box input:valid ~ label{
 	top:4px;
+	color:#0A9788;
 	font-size: 9px;
 }
